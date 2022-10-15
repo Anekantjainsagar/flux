@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Events from "./Screens/Events";
 
-function App() {
+const App = () => {
+  const { innerWidth, innerHeight } = window;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "#6ad1c7" }}>
+      <Navbar />
+      <div
+        style={
+          innerWidth < 600 ? { paddingTop: "9rem" } : { paddingTop: "6rem" }
+        }
+      ></div>
+      <div
+        style={
+          innerWidth < 600
+            ? {
+                margin: "auto",
+                height: `${innerHeight - 228}px`,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
+              }
+            : {
+                margin: "auto",
+                height: `${innerHeight - 175}px`,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
+              }
+        }
+      >
+        <Events />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
