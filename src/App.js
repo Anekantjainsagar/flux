@@ -1,12 +1,16 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Events from "./Screens/Events";
+import Home from "./Screens/Home";
+import About from "./Screens/About";
+import Projects from "./Screens/Projects";
 
 const App = () => {
   const { innerWidth, innerHeight } = window;
   return (
-    <div style={{ backgroundColor: "#6ad1c7" }}>
+    <div style={{ backgroundColor: "#63cac0" }}>
       <Navbar />
       <div
         style={
@@ -17,24 +21,26 @@ const App = () => {
         style={
           innerWidth < 600
             ? {
+                minHeight: `${innerHeight - 220}px`,
                 margin: "auto",
-                height: `${innerHeight - 228}px`,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                textAlign: "center",
               }
             : {
+                minHeight: `${innerHeight - 175}px`,
                 margin: "auto",
-                height: `${innerHeight - 175}px`,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                textAlign: "center",
               }
         }
       >
-        <Events />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
       <Footer />
     </div>

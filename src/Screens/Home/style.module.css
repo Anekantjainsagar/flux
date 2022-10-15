@@ -1,0 +1,213 @@
+.home {
+  padding: 0 10%;
+}
+
+.header {
+  display: flex;
+  padding: 4rem 5%;
+  align-items: center;
+}
+
+.header img {
+  width: 50%;
+}
+
+.header .content {
+  width: 50%;
+}
+
+.header .content h1 {
+  font-size: 3rem;
+  color: #112d32;
+}
+
+.header .content p {
+  color: #254e58;
+  font-size: 2.25rem;
+  margin-left: 0.25rem;
+}
+
+.projectsDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectsMore {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #63cac0;
+  font-weight: 600;
+  background-color: #254e58;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectsMore:hover {
+  border: 2px solid #112d32;
+  color: #112d32;
+  background-color: #63cac0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #112d32;
+  margin-top: "1.25rem";
+}
+
+.events {
+  margin: 3rem 0;
+}
+
+.events .eventsPhoto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1rem 0;
+}
+
+.events .eventsPhoto img {
+  width: 18vw;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 2rem;
+  object-position: center;
+  cursor: pointer;
+  scale: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.events .eventsPhoto img:hover {
+  scale: 1.1;
+}
+
+.header button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: #254e58;
+  transition: all 0.4s ease-in;
+  color: white;
+}
+
+.header button:hover {
+  background-color: white;
+  color: #254e58;
+  border: 1px solid white;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 0 0%;
+  }
+
+  .header {
+    display: flex;
+    padding: 0 5% 4rem 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    width: 100%;
+  }
+
+  .header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header .content h1 {
+    font-size: 3rem;
+    color: #112d32;
+  }
+
+  .header .content p {
+    color: #254e58;
+    text-align: center;
+    font-size: 2.25rem;
+    margin-left: 0.25rem;
+  }
+
+  .projectsDisplay {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projectsMore {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: #63cac0;
+    font-weight: 600;
+    background-color: #254e58;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projectsMore:hover {
+    border: 2px solid #112d32;
+    color: #112d32;
+    background-color: #63cac0;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #112d32;
+    margin-top: "1.25rem";
+  }
+
+  .events {
+    margin: 3rem 0;
+  }
+
+  .events .eventsPhoto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem 0;
+  }
+
+  .events .eventsPhoto img {
+    width: 90vw;
+    margin: 1rem auto;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 2rem;
+    object-position: center;
+    cursor: pointer;
+    scale: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .events .eventsPhoto img:hover {
+    scale: 1.1;
+  }
+
+  .header button {
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+    border-radius: 2rem;
+    padding: 0.5rem 1.75rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #254e58;
+    transition: all 0.4s ease-in;
+    color: white;
+  }
+
+  .header button:hover {
+    background-color: white;
+    color: #254e58;
+    border: 1px solid white;
+  }
+}
