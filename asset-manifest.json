@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/flux/static/css/main.e73aa9bf.css",
-    "main.js": "/flux/static/js/main.777a02e1.js",
+    "main.js": "/flux/static/js/main.ac489c33.js",
     "index.html": "/flux/index.html",
     "main.e73aa9bf.css.map": "/flux/static/css/main.e73aa9bf.css.map",
-    "main.777a02e1.js.map": "/flux/static/js/main.777a02e1.js.map"
+    "main.ac489c33.js.map": "/flux/static/js/main.ac489c33.js.map"
   },
   "entrypoints": [
     "static/css/main.e73aa9bf.css",
-    "static/js/main.777a02e1.js"
+    "static/js/main.ac489c33.js"
   ]
 }
